@@ -1,6 +1,10 @@
 Version history
 ===============
 
+8.3.2-1 (2019-08-30):
+
+- fixed: manage negative widget order when updating fixed widgets
+
 8.3.2 (2018-10-04):
 
 - changed: fallback logic for widget setting
