@@ -179,7 +179,13 @@ function widget_manager_widgets_url($hook_name, $entity_type, $return_value, $pa
 			$result = "/messageboard/{$owner->username}";
 			break;
 		case 'river_widget':
-			$result = '/activity';
+			if (elgg_in_context('profile')) {
+				$result = "/activity/owner/{$owner->username}";
+			} else if (elgg_in_context('dashboard') && ($widget->content_type == 'friends')) {
+				$result = "/activity/friends/{$owner->username}";
+			} else {
+				$result = '/activity';
+			}
 			break;
 		case 'bookmarks':
 			if ($owner instanceof ElggGroup) {
