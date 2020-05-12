@@ -1,6 +1,10 @@
 Version history
 ===============
 
+8.3.2-2 (2020-05-12):
+
+- fixed: river_widget title hyperlink depending on context & widget params
+
 8.3.2-1 (2019-08-30):
 
 - fixed: manage negative widget order when updating fixed widgets
