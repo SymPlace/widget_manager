@@ -1,5 +1,5 @@
 {
-	"name": "symplace/widget_manager",
+	"name": "coldtrick/widget_manager",
 	"description": "Manage your widgets",
 	"type": "elgg-plugin",
 	"keywords": ["elgg", "plugin", "widgets"],
